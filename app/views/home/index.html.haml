@@ -1,0 +1,255 @@
+
+#myCarousel1.carousel.slide{"data-ride" => "carousel"}
+  / Indicators
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel1"}
+    %li{"data-slide-to" => "1", "data-target" => "#myCarousel1"}
+    %li{"data-slide-to" => "2", "data-target" => "#myCarousel1"}
+  .carousel-inner
+    .item.active
+      = image_tag("banner.png", alt: "First slide", style: "width:100%; height: 500px")
+      .carousel-caption
+        %h1
+          vacayhome
+          %br
+          spa &amp; Resort
+    .item
+      = image_tag("banner2.png", alt: "Second slide", style: "width:100%; height: 500px")
+      .carousel-caption
+        %h1
+          vacayhome
+          %br
+          spa &amp; Resort
+    .item
+      = image_tag("banner3.png", alt: "Third slide", style: "width:100%; height: 500px")
+      .carousel-caption
+        %h1
+          vacayhome
+          %br
+          spa &amp; Resort
+  %a.left.carousel-control{"data-slide" => "prev", href: "#myCarousel1"}
+    = image_tag("icons/left-arrow.png", alt: "left", onmouseout: "this.src = 'images/icons/left-arrow.png'", onmouseover: asset_path('icons/left-arrow-hover.png'))
+  %a.right.carousel-control{"data-slide" => "next", href: "#myCarousel1"}
+    = image_tag("icons/right-arrow.png", alt: "left", onmouseout: "this.src = 'images/icons/right-arrow.png'", onmouseover: "this.src = 'images/icons/right-arrow-hover.png'")
+.clearfix
+/ service block-
+%section.service-block
+  .container
+    .row
+      .col-md-3.col-sm-3.col-xs-6.width-50
+        .service-details.text-center
+          .service-image
+            = image_tag("icons/wifi.png", alt: "image", class: "img-responsive") 
+          %h4
+            %a free wifi
+      .col-md-3.col-sm-3.col-xs-6.width-50
+        .service-details.text-center
+          .service-image
+            = image_tag("icons/key.png", alt: "image", class: "img-responsive")
+          %h4
+            %a room service
+      .col-md-3.col-sm-3.col-xs-6.mt-25
+        .service-details.text-center
+          .service-image
+            = image_tag("icons/car.png", alt: "image", class: "img-responsive")
+          %h4
+            %a free parking
+      .col-md-3.col-sm-3.col-xs-6.mt-25
+        .service-details.text-center
+          .service-image
+            = image_tag("icons/user.png", alt: "image", class: "img-responsive")
+          %h4
+            %a customer support
+/ gallery block-
+%section.gallery-block.gallery-front
+  .container
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room1.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room1.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a delux room
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room2.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room2.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a super room
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room3.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room3.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a single room
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room4.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room4.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a double room
+/ offer block
+%section.vacation-offer-block
+  .vacation-offer-bgbanner
+    .container
+      .row
+        .col-md-5.col-sm-6.col-xs-12
+          .vacation-offer-details
+            %h1 Your vacation Awaits
+            %h4 Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit.
+            %button.btn.btn-default{type: "button"} Choose a package
+/ End
+/ --resort-overview-
+%section.resort-overview-block
+  .container
+    .row
+      .col-md-6.col-sm-12.col-xs-12.remove-padd-right
+        .side-A
+          .product-thumb
+            .image
+              %a
+                = image_tag("category1.png", class: "img-responsive", alt: "image")
+        .side-B
+          .product-desc-side
+            %h3
+              %a luxury spa
+            %p Lorem ipsum dolor sit amet, consec adipiscing elit. Nunc lorem nulla, ornare eu felis luctus non maximus vitae, portt neque. ipsum dolor sit amet, consec adipiscing elit.
+            .links
+              = link_to "Read more", "single-blog.html" 
+      .clear
+      .col-md-6.col-sm-12.col-xs-12.remove-padd-left
+        .side-A
+          .product-thumb
+            .image
+              %a
+                = image_tag("category2.png", class: "img-responsive", alt: "image")
+        .side-B
+          .product-desc-side
+            %h3
+              %a Beatusish ingl
+            %p Lorem ipsum dolor sit amet, consec adipiscing elit. Nunc lorem nulla, ornare eu felis luctus non maximus vitae, portt neque. ipsum dolor sit amet, consec adipiscing elit.
+            .links
+              %a{href: "single-blog.html"} Read more
+      .clear
+      .col-md-6.col-sm-12.col-xs-12.remove-padd-right
+        .side-A
+          .product-desc-side
+            %h3
+              %a luxury room
+            %p Lorem ipsum dolor sit amet, consec adipiscing elit. Nunc lorem nulla, ornare eu felis luctus non maximus vitae, portt neque. ipsum dolor sit amet, consec adipiscing elit.
+            .links
+              %a{href: "single-blog.html"} Read more
+        .side-B
+          .product-thumb
+            .image.txt-rgt
+              %a.arrow-left
+                = image_tag("category3.png", class: "img-responsive", alt: "image")
+      .clear
+      .col-md-6.col-sm-12.col-xs-12.remove-padd-left
+        .side-A
+          .product-desc-side
+            %h3
+              %a heaven seanery
+            %p Lorem ipsum dolor sit amet, consec adipiscing elit. Nunc lorem nulla, ornare eu felis luctus non maximus vitae, portt neque. ipsum dolor sit amet, consec adipiscing elit.
+            .links
+              %a{href: "single-blog.html"} Read more
+        .side-B
+          .product-thumb.txt-rgt
+            .image
+              %a.arrow-left
+                = image_tag("category4.png", class: "img-responsive", alt: "image")
+      .clearfix
+/ ---blog slider---
+/ blog trainer block
+%section.blog-block-slider
+  .blog-block-slider-fix-image
+    #myCarousel2.carousel.slide{"data-ride" => "carousel"}
+      .container
+        / Wrapper for slides
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel2"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel2"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel2"}
+        .carousel-inner{role: "listbox"}
+          .item.active
+            .blog-box
+              %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            .blog-view-box
+              .media
+                .media-left
+                  = image_tag("client1.png", class: "media-object", alt: "image")
+                .media-body
+                  %h3.media-heading.blog-title Walter Hucko
+                  %h5.blog-rev Satisfied Customer
+          .item
+            .blog-box
+              %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            .blog-view-box
+              .media
+                .media-left
+                  = image_tag("client2.png", class: "media-object", alt: "image")
+                .media-body
+                  %h3.media-heading.blog-title Jules Boutin
+                  %h5.blog-rev Satisfied Customer
+          .item
+            .blog-box
+              %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            .blog-view-box
+              .media
+                .media-left
+                  = image_tag("client3.png", class: "media-object", alt: "image")
+                .media-body
+                  %h3.media-heading.blog-title Attilio Marzi
+                  %h5.blog-rev Satisfied Customer
+  .clearfix
+/ -blog block-
+%section.blog-block
+  .container
+    .row.offspace-45
+      .view-set-block
+        .col-md-6.col-sm-6.col-xs-12
+          .event-blog-image
+            = image_tag("blog1.png", class: "img-responsive", alt: "image")
+        .col-md-6.col-sm-6.col-xs-12.side-in-image
+          .event-blog-details
+            %h4
+              %a{href: "single-blog.html"} Lorem ipsum dolor sit amet
+            %h5
+              Post By Admin
+              %a
+                %i.fa.fa-heart-o.fa-lg{"aria-hidden" => "true"}>
+                Likes
+              %a
+                %i.fa.fa-comment-o.fa-lg{"aria-hidden" => "true"}>
+                comments
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet lectus.
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc facilisis, dapibus libero ac
+            %a.btn.btn-default{href: "single-blog.html"} Read More
+    .row.offspace-45
+      .view-set-block
+        .col-md-6.col-sm-6.col-xs-12
+          .event-blog-image
+            = image_tag("blog2.png", class: "img-responsive", alt: "image")
+        .col-md-6.col-sm-6.col-xs-12.side-in-image
+          .event-blog-details
+            %h4
+              %a{href: "single-blog.html"} Lorem ipsum dolor sit amet
+            %h5
+              Post By Admin
+              %a
+                %i.fa.fa-heart-o.fa-lg{"aria-hidden" => "true"}>
+                Likes
+              %a
+                %i.fa.fa-comment-o.fa-lg{"aria-hidden" => "true"}>
+                comments
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornare turpis neque, eu commodo sapien porta sed. Nam ut ante turpis. Nam arcu odio, scelerisque a vehicula vitae, auctor sit amet lectus.
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem nulla, ornare eu felis quis, efficitur posuere nulla. Aliquam ac luctus turpis, non faucibus sem. Fusce ornard hendrerit tortor vulputate id. Vestibulum mauris nibh, luctus non maximus vitae, porttitor eget neque. Donec tristique nunc facilisis, dapibus libero ac
+            %a.btn.btn-default{href: "single-blog.html"} Read More

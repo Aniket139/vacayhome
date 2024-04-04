@@ -1,0 +1,69 @@
+%section.image-head-wrapper{style: "background-image: url('#{image_path('banner.jpg')}');"}
+  .inner-wrapper
+    %h1 Rooms
+.clearfix
+/ gallery block-
+%section.gallery-block.gallery-front
+  .container
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room1.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room1.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a delux room
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room2.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room2.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a delux room
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room3.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room3.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a delux room
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .gallery-image
+          = image_tag("room4.png", class: "img-responsive", alt: "image")
+          .overlay
+            %a.info.pop.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/room4.png"}
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %p
+              %a delux room
+/ service block-
+%section.service-block
+  .bg-set-col
+    .container
+      .row
+        .col-md-3.col-sm-3.col-xs-6.width-50
+          .service-details.text-center
+            .service-image
+              = image_tag("icons/wifi.png", alt: "image", class: "img-responsive") 
+            %h4
+              %a free wifi
+        .col-md-3.col-sm-3.col-xs-6.width-50
+          .service-details.text-center
+            .service-image
+              = image_tag("icons/key.png", alt: "image", class: "img-responsive")
+            %h4
+              %a room service
+        .col-md-3.col-sm-3.col-xs-6.mt-25
+          .service-details.text-center
+            .service-image
+              = image_tag("icons/car.png", alt: "image", class: "img-responsive")
+            %h4
+              %a free parking
+        .col-md-3.col-sm-3.col-xs-6.mt-25
+          .service-details.text-center
+            .service-image
+              = image_tag("icons/user.png", alt: "image", class: "img-responsive")
+            %h4
+              %a customer support

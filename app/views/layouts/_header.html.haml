@@ -1,0 +1,68 @@
+#page
+  .top-header
+    .container
+      .row
+        .col-md-6
+        .col-md-6
+          .social-grid
+            %ul.list-unstyled.text-right
+              %li
+                %a
+                  %i.fa.fa-facebook
+              %li
+                %a
+                  %i.fa.fa-twitter
+              %li
+                %a
+                  %i.fa.fa-linkedin
+              %li
+                %a
+                  %i.fa.fa-instagram
+      / header-
+  %header.header-container
+    .container
+      .top-row
+        .row
+          .col-md-2.col-sm-6.col-xs-6
+            #logo
+              -#  <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+              %a{href: "index.html"}
+                %span> vacay
+                home
+          .col-sm-6.visible-sm
+            .text-right
+              %button.book-now-btn{type: "button"} Book Now
+          .col-md-8.col-sm-12.col-xs-12.remove-padd
+            %nav.navbar.navbar-default
+              .navbar-header.page-scroll
+                %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+                  %span.sr-only Toggle navigation
+                  %span.icon-bar
+                  %span.icon-bar
+                  %span.icon-bar
+              .collapse.navigation.navbar-collapse.navbar-ex1-collapse.remove-space
+                %ul.list-unstyled.nav1.cl-effect-10
+                  %li
+                    = link_to root_path, class: ('active' if current_page?(root_path)), "data-hover" => "Home"  do 
+                      %span Home
+                  %li
+                    = link_to about_us_path, class: ('active' if current_page?(about_us_path)), "data-hover" => "About" do 
+                      %span About
+                  %li
+                    = link_to rooms_path, class: ('active' if current_page?(rooms_path)), "data-hover" => "Room" do 
+                      %span Room
+                  %li
+                    = link_to gallery_index_path, class: ('active' if current_page?(gallery_index_path)), "data-hover" => "Gallrey" do 
+                      %span Gallery
+                  %li
+                    = link_to dinning_index_path, class: ('active' if current_page?(dinning_index_path)), "data-hover" => "Dinning" do 
+                      %span Dinning
+                  %li
+                    = link_to news_index_path, class: ('active' if current_page?(news_index_path)), "data-hover" => "News" do 
+                      %span News
+                  %li
+                    = link_to contact_index_path, class: ('active' if current_page?(contact_index_path)), "data-hover" => "Contact Us" do 
+                      %span Contact Us
+          .col-md-2.col-sm-4.col-xs-12.hidden-sm
+            .text-right
+              %button.book-now-btn{type: "button"} Book Now

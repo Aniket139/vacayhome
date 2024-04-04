@@ -1,0 +1,55 @@
+%section.image-head-wrapper{style: "background-image: url('#{image_path('inner-banner.png')}');"}
+  .inner-wrapper
+    %h1 Gallery
+.clearfix
+:css
+  .grid {
+      background: rgba(0,0,0,0);
+  }
+  /* clear fix */
+  .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+  }
+  /* ---- .grid-item ---- */
+  .grid-sizer,
+  .grid-item {
+      width: 33%;
+  }
+  .grid-item {
+      float: left;
+  }
+  .grid-item img {
+      display: block;
+      max-width: 100%;
+  }
+%section.gallery-block
+  .container
+    .row
+      .grid.hover-effect
+        .grid-sizer
+        .grid-item.percent37.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery1-1.jpg"}
+            = image_tag("gallery1-1.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent25.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery2-2.jpg"}
+            = image_tag("gallery2-2.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent37.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery3-3.jpg"}
+            = image_tag("gallery3-3.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent25.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery4-4.jpg"}
+            = image_tag("gallery4-4.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent37.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery5-5.jpg"}
+            = image_tag("gallery5-5.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent20.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery6-6.jpg"}
+            = image_tag("gallery6-6.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent20.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery7-7.jpg"}
+            = image_tag("gallery7-7.jpg", class: "img-responsive", alt: "image")
+        .grid-item.percent20.gallery-image
+          %a.example-image-link.img-responsive{"data-lightbox" => "example-1", href: "images/gallery8-8.jpg"}
+            = image_tag("gallery8-8.jpg", class: "img-responsive", alt: "image")

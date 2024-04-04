@@ -1,0 +1,134 @@
+%section.image-head-wrapper{style: "background-image: url('#{image_path('banner2.jpg')}');"}
+  .inner-wrapper
+    %h1 dinning
+.clearfix
+/ dinning
+%section.blog
+  .container
+    .row
+      .col-md-9.col-sm-8.col-xs-12
+        %h2.blog-title-head Lorem Ipsum Dolor Sit amet
+        %p.user-info
+          Posted by
+          %a Admin
+          in
+          %a General
+          |
+          %a 10 Comments
+        .blog-image-single.margin-top-small
+          = image_tag("banner2.png", class: "img-responsive", alt: "image")
+        %p.blog-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        .clearfix
+        .single-bottom.comment-form
+          %h3 Leave your Comment
+          %form{action: "#", method: "post"}
+            %input.form-control{name: "Name", placeholder: "Name", required: "", type: "text"}/
+            %input.form-control{name: "Email", placeholder: "Email", required: "", type: "email"}/
+            %textarea.form-control{name: "Message", placeholder: "Message Here....", required: ""}
+            %input.submit-btn{type: "submit", value: "Send"}/
+      %aside.col-md-3.col-sm-4.col-xs-12
+        .blog-list
+          %h4 Categories
+          %ul
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                Lorem Ipsum is simply
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                Contrary to popular belief
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                It is a long established
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                There are many variations
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                But I must explain to you
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                At vero eos et accusamus
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                On the other hand
+          .clearfix
+        .blog-list
+          %h4 Archives List
+          %ul
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                July (15)
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                Oct (20)
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                November (8)
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                December (25)
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                August (9)
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                July (15)
+            %li
+              %a
+                %i.fa.fa-caret-right>
+                Mar (25)
+        .blog-list1
+          %h4 Popular Posts
+          .blog-list-top
+            .blog-img
+              %a
+                -# = image_tag("room1.png", class: "img-responsive", alt: "image")
+            .blog-text
+              %p
+                %a Lorem ipsum dolor sit amet, consectetuer
+              %span.link
+                Sep 14, 2016
+            .clearfix
+          .blog-list-top
+            .blog-img
+              %a
+                %img.img-responsive{alt: "", src: "images/Home/img3.jpg"}/
+            .blog-text
+              %p
+                %a Lorem ipsum dolor sit amet, consectetuer
+              %span.link
+                Sep 14, 2016
+            .clearfix
+          .blog-list-top
+            .blog-img
+              %a
+                %img.img-responsive{alt: "", src: "images/Home/img4.jpg"}/
+            .blog-text
+              %p
+                %a Lorem ipsum dolor sit amet, consectetuer
+              %span.link
+                Sep 14, 2016
+            .clearfix
+          .blog-list-top
+            .blog-img
+              %a
+                %img.img-responsive{alt: "", src: "images/Home/img5.jpg"}/
+            .blog-text
+              %p
+                %a Lorem ipsum dolor sit amet, consectetuer
+              %span.link
+                Sep 14, 2016
+            .clearfix

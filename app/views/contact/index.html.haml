@@ -1,0 +1,37 @@
+%section.image-head-wrapper{style: "background-image: url('#{image_path('banner5.jpg')}');"}
+  .inner-wrapper
+    %h1 Contact Us
+.clearfix
+%section.contact-block
+  .container
+    .col-md-6.contact-left-block
+      %h3
+        %span> Contact
+        Us
+      %p.text-left Nulla pharetra eleifend tellus in molestie. In vel neque sit amet urna gravida blandit nec id massa. Phasellus eu aliquet augue. Quisque fringilla urna quam.
+      %p.text-right
+        701 Old York Drive Richmond USA.
+        %i.fa.fa-map-marker.fa-lg
+      %p.text-right
+        %a{href: "tel:+1-202-555-0100"}
+          +1-202-555-0100
+          %i.fa.fa-phone.fa-lg
+      %p.text-right
+        %a{href: "mailto:demo@info.com"}
+          demo@info.com
+          %i.fa.fa-envelope
+    .col-md-6.contact-form
+      %h3
+        Send a
+        %span Message
+      %form{action: "#", method: "post"}
+        %input.form-control{name: "Name", placeholder: "Name", required: "", type: "text"}/
+        %input.form-control{name: "Email", placeholder: "Email", required: "", type: "email"}/
+        %textarea.form-control{name: "Message", placeholder: "Message Here....", required: ""}
+        %input.submit-btn{type: "submit", value: "Submit"}/
+    .clearfix
+/ -map-
+%section.offspace-70
+  .map
+    .container
+      %iframe{allowfullscreen: "", frameborder: "0", src: "https://www.google.com/maps/place/Panvel+Point,+Mota+Varachha,+Surat,+Gujarat+394101,+India/@21.2326499,72.8668793,15.31z/data=!4m6!3m5!1s0x3be04f385708e481:0x45200a861ae9101b!8m2!3d21.2362048!4d72.8728248!16s%2Fg%2F11cknfr5g7?hl=en-US&entry=ttu", style: "border:0; width: 100%; height: 400px"}
